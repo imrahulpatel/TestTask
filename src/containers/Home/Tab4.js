@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
 import Profile from '../../assets/images/ic_profile.png';
+import styles from '../../styles/tab';
 
 class Tab4 extends React.Component {
   static navigationOptions = ({ navigation }) => ({
-    // header: null,
     tabBarLabel: 'Tab4',
     tabBarIcon: ({ tintColor }) => <Image source={Profile} style={{ tintColor }} />,
     title: 'Tab4',
@@ -33,14 +33,5 @@ class Tab4 extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'rgb(247, 248, 249)',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 export default Tab4;

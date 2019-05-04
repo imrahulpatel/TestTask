@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
 import DiveThru from '../../assets/images/ic_divethru.png';
+import styles from '../../styles/tab';
 
 class Tab3 extends React.Component {
   static navigationOptions = ({ navigation }) => ({
-    // header: null,
     tabBarLabel: 'Tab3',
     tabBarIcon: ({ tintColor }) => <Image source={DiveThru} style={{ tintColor }} />,
     title: 'Tab3',
@@ -33,14 +33,5 @@ class Tab3 extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'rgb(247, 248, 249)',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 export default Tab3;

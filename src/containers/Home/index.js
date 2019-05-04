@@ -12,9 +12,6 @@ const components = {
     headerMode: 'screen',
     initialRouteName: 'Tab1',
   }) },
-  // Tab2: { screen: Tab2 },
-  // Tab3: { screen: Tab3 },
-  // Tab4: { screen: Tab4 },
   Tab2: { screen: StackNavigator({
     Tab2: { screen: Tab2 },
   }, {

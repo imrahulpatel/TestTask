@@ -1,7 +1,7 @@
 import React from 'react'
-import { View, StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 import Home from '../../assets/images/ic_home.png';
-import IC_BACK from '../../assets/images/ic_back.png';
+import styles from '../../styles/tab';
 
 class Tab1 extends React.Component {
   static navigationOptions = ({ navigation }) => ({
@@ -33,14 +33,5 @@ class Tab1 extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'rgb(247, 248, 249)',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 export default Tab1;
